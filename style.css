@@ -1,0 +1,118 @@
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+	  font-family: Helvetica, Arial, sans-serif;
+}
+
+
+/* #CLEARFIX */
+.group:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* #HEADER */
+
+
+header {
+    /* background: #3279a1; */
+    /* text-align: center; */
+    background: orange;
+    /* padding: 1.5em 1em 1em 1em; */
+    display: flex;
+    justify-content: space-between;
+}
+
+header #logo a {
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: .05em;
+    padding: 10px;
+    font-size: 20px;
+    /* margin-bottom: 20px; */
+    /* justify-content: space-between; */
+}
+
+/* #NAVIGATION */
+
+#mainnav {
+    /* background: #333; */
+    color: #fff;
+    font-weight: bold;
+    text-transform:uppercase;
+    letter-spacing: .05em;
+    /* display: flex; */
+    /* justify-content: flex-end; */
+    margin-top: 0;
+}
+
+#mainnav #menu {
+    display: none;
+    padding: .8em 1.5em;
+    cursor: pointer;
+}
+
+
+#mainnav ul {
+    display: block;
+    margin: 0;
+    /* text-align: center; */
+}
+
+#mainnav ul li {
+    margin: 0;
+    list-style: none;
+    display: inline-block;
+}
+
+#mainnav ul li a {
+    color: #fff;
+    text-decoration: none;
+    display: inline-block;
+    padding: .9em 1.5em .8em 1.5em;
+}
+
+#mainnav ul li a:hover {
+    color: #000;
+    background: #aaa;
+}
+
+
+/* Tablet (Between 768px - 992px)*/
+@media all and (min-width: 768px) and (max-width: 992px) {
+
+}
+
+/* MOBILE (Smaller than 768px)*/
+@media all and (max-width: 767px) {
+	
+    #mainnav #menu {
+        display: block;
+
+    }
+
+    #mainnav ul {
+        display: none;
+        background: #666;
+        padding: 1em;
+        /* text-align: left; */
+    }
+    #mainnav ul li {
+        display: block;
+        /* text-align: left; */
+    }
+
+    #mainnav ul li a {
+        display: block;
+        padding: .75em 1.5em .5em 1.5em;
+        align-items: flex-start;
+    }
+
+}
